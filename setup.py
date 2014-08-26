@@ -4,10 +4,10 @@ from setuptools import find_packages
 
 
 setup(name='thriftpool',
-       version = '1.0',
+       version = '1.1',
        description = 'thrift connection pool',
-       author="Adrian Muraru",
-       author_email="amuraru@adobe.com",
+       author="Manish Sharma",
+       author_email="code@mksh.net",
        packages=find_packages('src'),
        package_dir={'': 'src'},
        include_package_data=True,

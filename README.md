@@ -22,5 +22,7 @@ cl.close()
 ## To Do
 Keep only a configurable number of connections alive and drop unused ones.
 
+## Originally forked from
+https://github.com/amuraru/thrift-connection-pool
 
 

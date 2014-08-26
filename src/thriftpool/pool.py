@@ -52,7 +52,8 @@ class ConnectionPool(object):
         socket = TSocket.TSocket(self.host, self.port)
         if self.network_timeout > 0:
             socket.setTimeout(self.network_timeout)
-        transport = TTransport.TBufferedTransport(socket)
+        #transport = TTransport.TBufferedTransport(socket)
+        transport = TTransport.TFramedTransport(socket)
         protocol = TBinaryProtocol.TBinaryProtocolAccelerated(transport)
         connection = self.iface_cls(protocol)
         transport.open()

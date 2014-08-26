@@ -29,7 +29,7 @@ class Client(object):
                  host, port,
                  pool_size=ConnectionPool.DEFAULT_POOL_SIZE,
                  retries = 3,
-                 async = False,
+                 async = True,
                  network_timeout = ConnectionPool.DEFAULT_NETWORK_TIMEOUT,
                  debug = False):
         self.host = host
